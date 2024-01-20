@@ -1,34 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+// React.createElememt => Object (creates) => HTMLElement (render)
+
 const heading = React.createElement(
   "h1",
   {
     id: "heading",
-    style: {
-      color: "red",
-    },
   },
-  "Hello world"
+  "Namaste React 🚀"
 );
 
-// console.log(heading)
+console.log(heading);
 
-// Parent DOM tree
+// JSX => Javascript Syntax
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("h1", { id: "" }, "Im parent"),
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "This is namaste react 🚀"),
-    React.createElement("h2", {}, "I'm Parent h2 tag"),
-  ]),
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "I'm child h1 tag"),
-    React.createElement("h2", {}, "I'm child h2 tag"),
-  ]),
-]);
+const jsxHeading = <h1 id="heading">Namate React</h1>;
+
+console.log(jsxHeading)
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// root.render(heading);
-root.render(parent);
+console.log(root);
+
+root.render(jsxHeading);
