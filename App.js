@@ -26,12 +26,25 @@ JSX => Babel transpiles it to React.createElement => ReactElement => which is JS
 
 */
 
+// React Element
 const jsxHeading = <h1 id="heading">Namate React</h1>;
 
-console.log(jsxHeading);
+const Title = () => {
+  return <h1>Title Component</h1>;
+};
+
+// React Component
+const HeadingComponent = () => {
+  return (
+    <div id="container">
+      <Title />
+      <h1>Namaste React Functional Component</h1>
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 console.log(root);
 
-root.render(jsxHeading);
+root.render(<HeadingComponent />);

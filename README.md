@@ -91,3 +91,35 @@ It transpiles JSX code to React code
 You can write JSX in single line only, but if you want to write in multiline then you've to use
 "( )".
 This is because babel needs to know/understand where the JSX is starting and where its ending.
+
+# Components in React
+
+There are two types of components in React
+
+- Class based component (old way)
+- Functional components (new way)
+
+## Function based component
+
+Functional component are the normal javascript functions which returns some JSX
+
+# What is Component composition
+
+Breaking down code into separte blocks / function / files and use them using <></> is called as
+component composition
+
+```js
+const Title = () => {
+  return <h1 id="title">Title</h1>;
+};
+
+const Heading = () => {
+  return (
+    <div id="container">
+      {/* This is component composition */}
+      <Title />
+      <h1 id="heading">Namaste React 🚀</h1>
+    </div>
+  );
+};
+```
