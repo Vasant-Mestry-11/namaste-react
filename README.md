@@ -78,3 +78,16 @@ Browserslist: [
 ]
 
 this means your application will definately work in these mentioned version, it might or not work in other versions
+
+# What is babel ?
+
+Babel is Javascript compiler also called as Transpiler
+It transpiles JSX code to React code
+
+[Babel Website](https://babeljs.io/)
+
+# JSX
+
+You can write JSX in single line only, but if you want to write in multiline then you've to use
+"( )".
+This is because babel needs to know/understand where the JSX is starting and where its ending.
